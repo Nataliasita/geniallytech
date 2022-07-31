@@ -25,10 +25,7 @@ a {
 }
 
 
-.main-nav {
-	// margin-top: 5px;
 
-}
 
 .main-nav a {
 	padding: 10px 15px;
@@ -58,6 +55,10 @@ a {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
  .nav-button{
     background-color: #24baf1;
@@ -82,15 +83,21 @@ a {
 	.container-nav,
 	.main-nav {
 		display: flex;
+            
+        
 	}
 	.container-nav{
+        display: flex;
 		flex-direction: column;
 		align-items: center;
+        align-content: center;
+                
     	.container-nav{
 		width: 80%;
 		margin: 0 auto;
 		max-width: 1150px;
 	}
+    
 	}
 
 }
@@ -106,6 +113,13 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content: center;
     }
 
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+     }
 }
