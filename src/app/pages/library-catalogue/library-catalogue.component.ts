@@ -8,18 +8,33 @@ import { BooksService } from 'src/app/services/books.service';
 })
 export class LibraryCatalogueComponent implements OnInit {
 
-  search='cuentos'
+  search:any;
+  noSearch:boolean=false;
+  allBooks:any;
 
   constructor( private booksService:BooksService ) { }
 
-  ngOnInit(): void {+
-    this.getbooks()
+  ngOnInit(): void {
+
   }
 
-  getbooks(){
-    this.booksService.getBooks(this.search).subscribe(res =>{
+  getbooks(val:string){
+    this.booksService.getBooks(val).subscribe(res =>{
       console.log(res,'res')
+      this.allBooks=res;
+      if(this.allBooks.length == 0){
+        this.noSearch= true;
+      }else{
+        this.noSearch=false;
+      }
     })
+  }
+
+  searchLibrary(value:string){
+    console.log(value,'asdsadsad')
+
+    this.getbooks(value)
+
   }
 
 }

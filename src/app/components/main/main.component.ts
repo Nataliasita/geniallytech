@@ -66,4 +66,7 @@ export class MainComponent implements OnInit {
     const r= Math.floor(Math.random() * (this. imagesaAvatar.length - 1)) + 0;
     return this.imagesaAvatar[r];
   }
+  goGame(){
+    window.open("https://boring-bardeen-67e752.netlify.app/#home", "_blank");
+  }
 }

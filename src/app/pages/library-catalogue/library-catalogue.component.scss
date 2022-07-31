@@ -1,0 +1,105 @@
+.container-library{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .header{
+        height: 11vh;
+        width: 100%;
+        background: #002e84;
+        margin-bottom: 5vh;
+        align-items: center;
+        display: flex;
+        padding-left: 2vw;
+        .imgPrincipal{
+            height: 40px;
+        }
+    }
+}
+.container-books{
+    width: 55vw;
+    height: 70vh;
+    background-color: rgb(228, 228, 228);
+    overflow-y: scroll;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding: 1em;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+.container-books::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+.container-books::-webkit-scrollbar-track {
+    background: transparent;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .container-books::-webkit-scrollbar-thumb {
+    background-color: #545454; 
+    border-radius: 20px; 
+    border: 2px solid #eef3f3;
+  }
+.search{
+    width: 40vw;
+    border-radius: 20px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: 6vh;
+    margin-bottom: 5vh;
+    outline: none;
+    padding-left: 1.5vw;
+}
+.container-item{
+    background-color: rgb(255, 255, 255);
+    width: 51.5vw;
+    height: 26vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    flex-direction: column;
+    display: flex;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+
+
+    .description{
+        width: auto;
+        height: auto;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px;
+    }
+    .publication{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .title-book{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .subtitle-book{
+        font-size: 12px;
+    }
+    .publication-icons{
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+}
+.title-header{
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 30%;
+    font-size: 18px;
+}
+.condition{
+    width: 20vw;
+    text-align: center;
+}

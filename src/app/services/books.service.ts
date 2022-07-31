@@ -10,7 +10,7 @@ export class BooksService {
   constructor(private http: HttpClient) { }
 
   getBooks(search:string){
-    const path = `https://www.etnassoft.com/api/v1/get/?any_tags=[${search}]&order=newest`;
+    const path = `https://www.etnassoft.com/api/v1/get/?any_tags=[${search}]`;
     return this.http.get(path).pipe(
       map((response) => {
         return response;

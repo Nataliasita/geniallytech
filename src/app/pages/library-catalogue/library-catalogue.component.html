@@ -1,1 +1,28 @@
-<p>library-catalogue works!</p>
+<section class="container-library">
+    <nav class="header">
+        <img class="imgPrincipal" src="./../../../assets/images/logohome.png" alt="logo">
+        <span class="title-header">Biblioteca Digital</span>
+    </nav>
+        <input class="search" type="text" placeholder="Buscar libro por categoria o nombre" (keyup.enter)="searchLibrary(search.value)" #search>
+    <div class="container-books">
+        <span *ngIf="noSearch" class="condition">No encontramos libros para tu consulta, puedes cambiar los criterios de busqueda...</span>
+        <div class="container-item" *ngFor="let book of allBooks">
+            <span class="title-book">Titulo del libro: {{book.title}}</span>
+            <span class="subtitle-book">Autor: {{book.author}}</span>
+            <span class="subtitle-book">Paginas: {{book.pages}}</span>
+            <div class="publication">
+                <p class="subtitle-book">Publicado por: {{book.publisher}}</p>
+                <p class="subtitle-book">Fechas de Publicacion: {{book.publisher_date}}</p>
+            </div>
+            <p class="description"> Descripción: {{book.content}}</p>
+
+            <div class="publication-icons">
+                <span class="material-symbols-rounded">app_registration</span>
+                <br>
+                <span class="material-symbols-rounded">volume_down_alt</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
