@@ -43,7 +43,35 @@
     justify-content: center;
 }
 
+.sponsor-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   
+    
+}
+.cont-categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.cont-categories img{
+    margin-bottom: 30px;
+}
+
+.tittle-categories{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 
 .backgroundColor{

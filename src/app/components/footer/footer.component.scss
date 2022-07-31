@@ -1,0 +1,30 @@
+.footer-content{
+    display: flex;
+}
+
+.content-idioma{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.infogeneral{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.infogeneral h5{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.infogeneral p{
+    font-size: 12px;
+}
+
+#idiomas{
+    margin: 30px;
+    padding: 6px;
+}
+

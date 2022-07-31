@@ -25,7 +25,7 @@
     </div>
     <div class="carousel-inner">
       <div *ngFor="let img of arrayImg" class="carousel-item active">
-        <img [src]="img.link" [alt]="img.nombre" width="100%" height="500" />
+        <img [src]="img.link" [alt]="img.nombre" width="100%" height="700" />
       </div>
     </div>
     <button
@@ -49,37 +49,60 @@
   </div>
   <section>
     <div class="row h-100 divFantasma ocultaResponsive">
-      <div class="col-md-1">
-        
-      </div>
-      <div class="col-md-11 my-auto">
-       
-      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-11 my-auto"></div>
     </div>
-    <div class="row h-100" style="    min-height: 400px;">
-      <img  class="img-fluid mx-auto imgFlotante ocultaResponsive"
-   width="500" height="500" src="./assets/images/quienes-somos.png" alt="about-us" />
+    <div class="row h-100" style="min-height: 400px">
+      <img
+        class="img-fluid mx-auto imgFlotante ocultaResponsive"
+        width="500"
+        height="500"
+        src="./assets/images/quienes-somos.png"
+        alt="about-us"
+      />
 
-      <div class="col-md-1 backgroundColor">
-        
-      </div>
-      <div class="col-md-6 my-auto">
-        <h2 class="featurette-heading fw-normal lh-1  style-tittle">¿Quiénes somos? </h2>
-        <p class="lead">La plataforma <span class="letra-grosor">Geniallity Tech </span>  es una plataforma de ámbito estatal, privada, sin ánimo de lucro que trabaja para promover Educación de Calidad en las poblaciones más vulnerables y desprotegidas.</p>
+      <div class="col-md-1 backgroundColor"></div>
+      <div class="col-md-6 my-auto" id="id1">
+        <h2 class="featurette-heading fw-normal lh-1 style-tittle">
+          ¿Quiénes somos?
+        </h2>
+        <p class="lead">
+          La plataforma <span class="letra-grosor">Geniallity Tech </span> es
+          una plataforma de ámbito estatal, privada, sin ánimo de lucro que
+          trabaja para promover Educación de Calidad en las poblaciones más
+          vulnerables y desprotegidas.
+        </p>
       </div>
       <div class="col-md-4 my-auto margin-bo">
-        <img hidden class="img-fluid mx-auto" width="500" height="500" src="./assets/images/quienes-somos.png" alt="about-us" />
+        <img
+          hidden
+          class="img-fluid mx-auto"
+          width="700"
+          height="700"
+          src="./assets/images/quienes-somos.png"
+          alt="about-us"
+        />
       </div>
     </div>
     <div class="row h-100 backgroundColor">
-      <div class="col-md-1 backgroundColor">
-        
-      </div>
+      <div class="col-md-1 backgroundColor"></div>
       <div class="col-md-5 my-auto pad-0">
-        <img class="img-fluid mx-auto" width="100%" height="100%" src="./assets/images/voluntario.png" alt="volunteer" />
+        <img
+          class="img-fluid mx-auto"
+          width="100%"
+          height="100%"
+          src="./assets/images/arduino.png"
+          alt="volunteer"
+        />
       </div>
       <div class="col-md-5 my-auto">
-        img
+        <p class="lead">
+          Arduino es una compañía de desarrollo de software y hardware libres,
+          así como una comunidad internacional que diseña y manufactura placas
+          de desarrollo de hardware para construir dispositivos digitales y
+          dispositivos interactivos que puedan detectar y controlar objetos del
+          mundo real.
+        </p>
       </div>
     </div>
   </section>
@@ -93,133 +116,50 @@
 
       <!-- START THE FEATURETTES -->
 
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2 fondo-arduino">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Arduino <span class="text-muted"> conectividad</span>
-          </h2>
-          <p class="lead">
-            Another featurette? Of course. More placeholder content here to give
-            you an idea of how this layout would work with some actual
-            real-world content in place.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" />
-            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-        </div>
-      </div>
-
       <div class="row featurette" id="id2">
-        <h1>Categorias</h1>
-        <div class="col-lg-3">
-          <svg
-            class="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-          <h2 class="fw-normal">Biblioteca Lecto-escritura</h2>
-          <p>
-            Some representative placeholder content for the three columns of
-            text below the carousel. This is the first column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <div class="tittle-categories">
+          <h1>Categorías</h1>
         </div>
-        <!-- /.col-lg-4 -->
 
-        <div class="col-lg-3">
-          <svg
-            class="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-          <h2 class="fw-normal">Lógico-Matemático</h2>
-          <p>
-            Another exciting bit of representative placeholder content. This
-            time, we've moved on to the second column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <div class="col-lg-3 cont-categories">
+          <img
+            class="categories"
+            src="./assets/images/bibliotecas.png"
+            alt="volunteer"
+          />
+          <h2 class="fw-normal">Biblioteca</h2>
+          <p>Lecto-Escritura</p>
         </div>
-        <!-- /.col-lg-4 -->
 
-        <div class="col-lg-3">
-          <svg
-            class="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-          <h2 class="fw-normal">No te limites</h2>
-          <p>
-            Another exciting bit of representative placeholder content. This
-            time, we've moved on to the second column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <div class="col-lg-3 cont-categories">
+          <img
+            class="categories"
+            src="./assets/images/logico.png"
+            alt="volunteer"
+          />
+          <h2 class="fw-normal">Lógico</h2>
+          <p>Matemático</p>
         </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-3">
-          <svg
-            class="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
 
-          <h2 class="fw-normal">Mujeres Tech</h2>
-          <p>
-            And lastly this, the third column of representative placeholder
-            content.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <div class="col-lg-3 cont-categories">
+          <img
+            class="categories"
+            src="./assets/images/limites.png"
+            alt="volunteer"
+          />
+          <h2 class="fw-normal">No</h2>
+          <p>te limites</p>
         </div>
-        <!-- /.col-lg-4 -->
+
+        <div class="col-lg-3 cont-categories">
+          <img
+            class="categories"
+            src="./assets/images/mujeres.png"
+            alt="volunteer"
+          />
+          <h2 class="fw-normal">Mujeres</h2>
+          <p>Tech</p>
+        </div>
       </div>
       <!-- /.row -->
 
@@ -236,7 +176,7 @@
           />
         </div>
         <div class="col-md-6">
-          <h2 class="featurette-heading fw-bold lh-1 ">
+          <h2 class="featurette-heading fw-bold lh-1">
             Sé parte <span class="text-muted">de nuestros voluntarios</span>
           </h2>
           <p class="lead">
@@ -264,15 +204,15 @@
             alt="donation"
           />
         </div>
-      
 
-      <div class="col-md-6">
-        <p class="lead p-donation">
-          "Tu puedes marcar la diferencia donando material pedagógico o tecnológico".
-        </p>
-        <button class="btn-volunteer">Donar</button>
+        <div class="col-md-6">
+          <p class="lead p-donation">
+            "Tu puedes marcar la diferencia donando material pedagógico o
+            tecnológico".
+          </p>
+          <button class="btn-volunteer">Donar</button>
+        </div>
       </div>
-    </div>
       <hr class="featurette-divider" />
 
       <!-- /END THE FEATURETTES -->
@@ -283,43 +223,48 @@
       <button class="btn-start">Clic aquí</button>
     </div>
     <div class="tittle-sponsor"><h3>Nuestros Patrocinadores</h3></div>
-    <div class="sponsor" hidden>
-      
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      
+
+    <div
+      class="row featurette justify-content-center align-self-center margin-patrocinantes"
+    >
+      <div class="col-lg-3 sponsor-img">
+        <img
+          class="img-fluid mx-auto"
+          width="200"
+          height="200"
+          src="https://uploads-ssl.webflow.com/5ef9e7820240534a394d4b30/5ef9e81e0240532d0b4d4cd6_LOGOEXPORT3-01(1200x600)TRANS-01.png"
+          alt="donation"
+        />
+      </div>
+      <div class="col-lg-3 sponsor-img">
+        <img
+          class="img-fluid mx-auto"
+          width="200"
+          height="200"
+          src="./assets/images/fortinet.png"
+          alt="donation"
+        />
+      </div>
+      <div class="col-lg-3 sponsor-img">
+        <img
+          class="img-fluid mx-auto"
+          width="200"
+          height="200"
+          src="./assets/images/digital-house.png"
+          alt="donation"
+        />
+      </div>
+      <div class="col-lg-3 sponsor-img">
+        <img
+          class="img-fluid mx-auto"
+          width="200"
+          height="200"
+          src="./assets/images/Microsoft.jpeg"
+          alt="donation"
+        />
+      </div>
     </div>
-    <div class="row featurette justify-content-center margin-patrocinantes">
-      <div class="col-lg-3">
-        <img
-        class="img-fluid mx-auto"
-        width="300"
-        height="300"
-        src="https://uploads-ssl.webflow.com/5ef9e7820240534a394d4b30/5ef9e81e0240532d0b4d4cd6_LOGOEXPORT3-01(1200x600)TRANS-01.png"
-        alt="donation"
-      />
-      </div>
-      <div class="col-lg-3">
-        <img
-        class="img-fluid mx-auto"
-        width="300"
-        height="300"
-        src="https://uploads-ssl.webflow.com/5ef9e7820240534a394d4b30/5ef9e81e0240532d0b4d4cd6_LOGOEXPORT3-01(1200x600)TRANS-01.png"
-        alt="donation"
-      />
-      </div>
-      <div class="col-lg-3">
-        <img
-        class="img-fluid mx-auto"
-        width="300"
-        height="300"
-        src="https://uploads-ssl.webflow.com/5ef9e7820240534a394d4b30/5ef9e81e0240532d0b4d4cd6_LOGOEXPORT3-01(1200x600)TRANS-01.png"
-        alt="donation"
-      />
-      </div>
-    </div>
+    <hr class="featurette-divider" />
   </section>
   <app-footer></app-footer>
 </main>
