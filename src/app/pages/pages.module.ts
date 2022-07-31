@@ -7,17 +7,22 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
 import { LoginStudentComponent } from './login-student/login-student.component';
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
         LoginStudentComponent,
+        DashboardComponent,
     ],
     imports: [
       CommonModule,
       PagesRoutingModule,
       SharedModule, 
-      ComponentsModule
+      ComponentsModule,
+      FormsModule,
+      ReactiveFormsModule
     ]
   })
   export class PagesModule { }
