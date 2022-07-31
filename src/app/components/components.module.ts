@@ -4,12 +4,14 @@ import { PagesRoutingModule } from '../pages/pages-routing.module';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [ 
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ]
 })
 export class ComponentsModule { }

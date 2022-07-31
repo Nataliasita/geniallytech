@@ -1,1 +1,70 @@
-<p>login-student works!</p>
+<section class="container-login" >
+
+    <div class="container-form" *ngIf='contain_login'>
+        <form action="" [formGroup]="formLogin" (submit)="sendUser()">
+
+            <input class="data-form" type="text" placeholder="Correo Electronico" formControlName="email">
+            
+            <div class="invalid">
+                <p
+                  *ngIf="formLogin.controls['email'].invalid || formLogin.controls['email'].invalid  && formLogin.controls['email'].dirty || formLogin.controls['email'].touched">
+                    Correo electronico requerido.</p>
+                <p
+                  *ngIf="formLogin.controls['email'].hasError('pattern') && formLogin.controls['email'].hasError('email')">
+                    Correo electronico invalido
+                </p>
+            </div>
+
+            <input class="data-form" type="password" placeholder="Contraseña" formControlName="password">
+
+            <div class="invalid">
+                <p
+                  *ngIf="formLogin.controls['password'].invalid || formLogin.controls['password'].invalid && formLogin.controls['password'].dirty || formLogin.controls['password'].touched">
+                    Contraseña requerida
+                </p>
+                <p
+                  *ngIf="formLogin.controls['password'].hasError('minlength')&& !formLogin.controls['password'].hasError('required') ">
+                    Minimo 8 caracteres, maximo 30
+                </p>
+            </div>
+
+            <button type="button" class="btn_login" [routerLink]="['/dashboard']" [disabled]="formLogin.invalid">Iniciar Sesion</button>
+
+        </form>
+
+        <div class="btn_register_container">
+            <span>¿Aún no tienes cuenta? </span> <br>
+
+            <button type="button" class="btn_register" (click)='registration()'>Registrate aqui</button>
+        </div>
+
+
+
+    </div>
+
+
+    
+    <div class="container-register" *ngIf='contain_register'>
+
+        <div class="btn_register_container2">
+            <button type="button" class="return" (click)='returnLogin()'>kkk</button>
+            <span>Registrarte</span><br>
+            <span>Es muy facil, ingresa los siguientes datos</span>
+        </div>
+        <form action="" [formGroup]="formRegister" (submit)="registerUser()">
+
+            <input class="data-form" type="text" placeholder="Nickname" formControlName="name_user_new">
+        
+            <input class="data-form" type="text" placeholder="Correo Electronico" formControlName="email_new">
+        
+            <input class="data-form" type="password" placeholder="Contraseña" formControlName="password_new">
+
+            <button type="button" class="btn_login" [routerLink]="['/dashboard']" [disabled]="formRegister.invalid">Registrarme</button>
+        </form>
+
+
+    </div>
+  
+
+</section>
+
