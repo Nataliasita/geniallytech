@@ -1,22 +1,24 @@
 <nav class="container-main">
 
-    <div>
-        <img src="" alt="">
+    <div class="container-avatar d-flex flex-column">
+        <img [src]="getImage()" alt="image avatar">
+        <span>Bienvenido Geniallity</span>
     </div>
-    <span>Bienvenido Geniallity</span>
+    
 
-    <button>
-        Actividades
-    </button>
+    <div class="btn-access">
+        <button type="button">
+            Actividades
+        </button>
 
-    <button>
-        Biblioteca
-    </button>
+        <button type="button">
+            Libros y lecturas
+        </button>
 
-    <button>
-        Juegos
-    </button>
-
+        <button type="button">
+            Juegos
+        </button>
+    </div>
 </nav>
 
 

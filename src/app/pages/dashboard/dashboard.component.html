@@ -1,2 +1,18 @@
-<app-main></app-main>
-<p>dashboard works!</p>
+<section class="container-dashboard">
+    <app-main></app-main>
+    <p>dashboard works!</p>
+
+    <div class="container-categories">
+        <div class="category" *ngFor="let category of categories" >
+            <img class="image-category"  src="{{category.image}}" alt="">
+
+            <div class="content-description" (click)="selectCategory(category.id)">
+                <h3>{{category.name}}</h3>
+                <p class="description">{{category.description}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+

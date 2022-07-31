@@ -1,3 +1,29 @@
 .container-main{
+    width: 20vw;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    background-color: brown;
+    align-items: center;
+    justify-content: space-evenly;
+    .container-avatar{
+        height: auto;
+        width: auto;
+        background-color: cadetblue;
+        img{
+            height: 15vh;
+            margin-bottom: 2vh;
+        }
+    }
+    .btn-access{
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        background-color: chartreuse;
+        flex-direction: column;
+        justify-content: space-evenly;
+        button{
+            height: 10vh;
+        }
+    }
 }
