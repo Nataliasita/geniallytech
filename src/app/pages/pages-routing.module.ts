@@ -5,6 +5,8 @@ import { RouterConstants } from '../core/router.constans';
 import { HomeComponent } from './home/home.component';
 import { LoginStudentComponent } from './login-student/login-student.component'
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LibraryCatalogueComponent } from './library-catalogue/library-catalogue.component';
+
 const routes: Routes = [
     {
       path: RouterConstants.HOME,
@@ -17,6 +19,10 @@ const routes: Routes = [
     {
       path: RouterConstants.DASHBOARD,
       component: DashboardComponent,
+    },
+    {
+      path: RouterConstants.LIBRARY,
+      component: LibraryCatalogueComponent,
     },
   ];
   

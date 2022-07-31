@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  image_select:any;
+
 
   constructor() { }
 
   ngOnInit(): void {
+    this.image_select = this.updateRandomImage();
   }
 
   imagesaAvatar = [
@@ -41,9 +44,6 @@ export class MainComponent implements OnInit {
       src: './../../../assets/images/male2.svg',
     },
     {
-      src: './../../../assets/images/male3.svg',
-    },
-    {
       src: './../../../assets/images/male5.svg',
     },
     {
@@ -57,4 +57,16 @@ export class MainComponent implements OnInit {
     },
   ]
 
+
+  getImage(){
+    return this.image_select.src;
+  }
+
+  updateRandomImage() {
+    const r= Math.floor(Math.random() * (this. imagesaAvatar.length - 1)) + 0;
+    return this.imagesaAvatar[r];
+  }
+  goGame(){
+    window.open("https://boring-bardeen-67e752.netlify.app/#home", "_blank");
+  }
 }

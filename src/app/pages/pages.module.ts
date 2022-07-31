@@ -9,12 +9,14 @@ import { ComponentsModule } from '../components/components.module';
 import { LoginStudentComponent } from './login-student/login-student.component';
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LibraryCatalogueComponent } from './library-catalogue/library-catalogue.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
         LoginStudentComponent,
         DashboardComponent,
+        LibraryCatalogueComponent,
     ],
     imports: [
       CommonModule,
