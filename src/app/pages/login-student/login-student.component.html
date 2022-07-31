@@ -1,5 +1,7 @@
 <section class="container-login" >
 
+    <img  class="logo-principal" src="./../../../assets/images/logohome.png" alt="image home">
+
     <div class="container-form" *ngIf='contain_login'>
         <form action="" [formGroup]="formLogin" (submit)="sendUser()">
 
@@ -35,7 +37,7 @@
         <div class="btn_register_container">
             <span>¿Aún no tienes cuenta? </span> <br>
 
-            <button type="button" class="btn_register" (click)='registration()'>Registrate aqui</button>
+            <button type="button" class="btn_register" (click)='registration()'> Registrate aqui</button>
         </div>
 
 
@@ -47,9 +49,13 @@
     <div class="container-register" *ngIf='contain_register'>
 
         <div class="btn_register_container2">
-            <button type="button" class="return" (click)='returnLogin()'>kkk</button>
-            <span>Registrarte</span><br>
-            <span>Es muy facil, ingresa los siguientes datos</span>
+            <button type="button" class="return" (click)='returnLogin()'>
+                <span class="material-symbols-rounded">
+                    arrow_back
+                </span>
+            </button>
+            <span class="title-register">Registrarte</span><br>
+            <span class="subtitle">Es muy facil, ingresa los siguientes datos</span>
         </div>
         <form action="" [formGroup]="formRegister" (submit)="registerUser()">
 

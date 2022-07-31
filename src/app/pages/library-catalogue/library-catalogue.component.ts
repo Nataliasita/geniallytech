@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from 'src/app/services/books.service';
 
 @Component({
   selector: 'app-library-catalogue',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LibraryCatalogueComponent implements OnInit {
 
-  constructor() { }
+  search='cuentos'
 
-  ngOnInit(): void {
+  constructor( private booksService:BooksService ) { }
+
+  ngOnInit(): void {+
+    this.getbooks()
+  }
+
+  getbooks(){
+    this.booksService.getBooks(this.search).subscribe(res =>{
+      console.log(res,'res')
+    })
   }
 
 }
