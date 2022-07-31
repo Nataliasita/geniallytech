@@ -42,3 +42,50 @@
     display: flex;
     justify-content: center;
 }
+
+
+
+
+.backgroundColor{
+    background:#24baf1 ;
+}
+.pad-0{
+    padding: 0 !important;
+}
+.style-tittle{
+    font-weight: bold !important;
+    margin-bottom: 3rem;
+}
+.margin-bo{
+    margin-bottom: 1rem !important;
+}
+.letra-grosor{
+    font-weight: bold !important;
+}
+.jumbotronBack{
+    background:#ccc ;
+    padding: 1rem !important;
+}
+.divFantasma{
+    min-height: 3rem;
+}
+.ocultaResponsive{
+    display: block;
+}
+.imgFlotante{
+    width: 26%;
+    position: absolute;
+    float: right;
+    margin-left: 68% !important;
+    margin-top: -3rem;
+}
+.margin-patrocinantes{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 500px) {
+   .ocultaResponsive{
+    display: none;
+
+   }
+  }
