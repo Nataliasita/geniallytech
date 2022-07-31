@@ -13,3 +13,32 @@
     font-weight: bold;
     font-size: 30px;
 }
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F3F3F3;
+    height: 234px;
+    padding: 10px;
+    
+}
+.btn-start{
+    border-radius: 12px;
+    padding: 5px;
+    width: 160px;
+    height: 40px;
+    font-weight: bold;
+    background:#24BAF1 ;
+    border: none;
+    margin-top: 50px;
+}
+.text-start{
+    font-weight: bold;
+    font-size: 34px;
+}
+.tittle-sponsor{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
