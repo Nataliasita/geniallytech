@@ -71,6 +71,12 @@ a {
     
 
  }
+.logo{
+    flex-grow: 1;
+    height: 60px;
+    width: 170px;
+}
+
 
 /* ================================= 
   Media Queries
@@ -123,3 +129,4 @@ a {
         align-content: center;
      }
 }
+
